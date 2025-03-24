@@ -1,16 +1,16 @@
-import { ReactNode } from 'react';
-import './globals.css';
+export const metadata = {
+  title: 'PokerMaster - Jeu de Poker en Ligne',
+  description: 'Jouez au poker Texas Hold\'em en ligne avec des joueurs du monde entier',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="fr">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
